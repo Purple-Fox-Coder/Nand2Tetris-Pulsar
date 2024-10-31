@@ -6,7 +6,7 @@
     "language",
     "grammar"
   ],
-  "repository": "https://github.com/Purple-Fox-Coder/Nand2Tetris-Pulsar/tree/main",
+  "repository": "https://github.com/Purple-Fox-Coder/Nand2Tetris-Pulsar.git",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
