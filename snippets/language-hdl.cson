@@ -1,0 +1,124 @@
+# If you want some example snippets, check out:
+# https://github.com/atom/language-javascript/blob/master/snippets/javascript.cson
+
+'.source.hdl':
+  'Method documentation':
+    'prefix': 'doc'
+    'body': '// ${1:method} - ${2:description}'
+  'Data Flip Flop':
+    'prefix': 'DFF'
+    'body': 'DFF(in=in, out=out);'
+  'Mux gate':
+    'prefix': 'Mux'
+    'body': 'Mux(a=a, b=b, sel=sel, out=out);'
+  'Mux16 gate':
+    'prefix': 'Mux16'
+    'body': 'Mux16(a=a, b=b, sel=sel, out=out);'
+  'Mux4Way16 gate':
+    'prefix': 'Mux4'
+    'body': 'Mux4Way16(a=a, b=b, c=c, d=d, sel=sel, out=out);'
+  'Mux8Way16 gate':
+    'prefix': 'Mux8'
+    'body': 'Mux8Way16(a=a, b=b, c=c, d=d, e=e, f=f, g=g, h=h, sel=sel, out=out);'
+  'Nand gate':
+    'prefix': 'Nand'
+    'body': 'Nand(a=a, b=b, out=out);'
+  'Not gate':
+    'prefix': 'Not'
+    'body': 'Not(in=in, out=out);'
+  'Not16 gate':
+    'prefix': 'Not16'
+    'body': 'Not16(in=in, out=out);'
+  'And gate':
+    'prefix': 'And'
+    'body': 'And(a=a, b=b, out=out);'
+  'And16 gate':
+    'prefix': 'And16'
+    'body': 'And16(a=a, b=b, out=out);'
+  'DMux gate':
+    'prefix': 'Dmux'
+    'body': 'Dmux(in=in, sel=sel, a=a, b=b);'
+  'DMux16 gate':
+    'prefix': 'Dmux16'
+    'body': 'Dmux16(in=in, sel=sel, a=a, b=b);'
+  'DMux4Way gate':
+    'prefix': 'Dmux4'
+    'body': 'Dmux(in=in, sel=sel, a=a, b=b, c=c, d=d);'
+  'DMux8Way gate':
+    'prefix': 'Dmux8'
+    'body': 'Dmux(in=in, sel=sel, a=a, b=b, c=c, d=d, e=e, f=f, g=g, h=h);'
+  'Or gate':
+    'prefix': 'Or'
+    'body': 'Or(a=a, b=b, out=out);'
+  'Or16 gate':
+    'prefix': 'Or16'
+    'body': 'Or16(a=a, b=b, out=out);'
+  'Or8Way gate':
+    'prefix': 'Or8'
+    'body': 'Or8Way(a=a, b=b, out=out);'
+  'Xor gate':
+    'prefix': 'Xor'
+    'body': 'Xor(a=a, b=b, out=out);'
+  'Add16 gate':
+    'prefix': 'Add16'
+    'body': 'Add16(a=a, b=b, out=out);'
+  'ALU component':
+    'prefix': 'ALU'
+    'body': 'ALU(x=inputX, y=inputY, zx=zeroX, nx=negateX, zy=zeroY ny=negateY, f=AddOrAddition, no=negateOut, out=out, zr=outIsZero, ng=OutNegitive);'
+  'HalfAdder component':
+    'prefix': 'Add16'
+    'body': 'HalfAdder(a=a, b=b, sum=sum, carry=carry);'
+  'FullAdder component':
+    'prefix': 'FullAdder'
+    'body': 'FullAdder(a=a, b=b, c=c, out=sum, carry=carry);'
+  'Inc16 gate':
+    'prefix': 'Inc16'
+    'body': 'Inc16(in=in, out=out);'
+  'Bit component':
+    'prefix': 'Bit'
+    'body': 'Bit(in=in, load=load, out=out);'
+  'Register component':
+    'prefix': 'Register'
+    'body': 'Register(in=in, load=load, out=out);'
+  'ARegister component':
+    'prefix': 'ARegister'
+    'body': 'ARegister(in=in, load=load, out=out);'
+  'DRegister component':
+    'prefix': 'DRegister'
+    'body': 'DRegister(in=in, load=load, out=out);'
+  'Screen component':
+    'prefix': 'Screen'
+    'body': 'Screen(in=in, load=load, address=address, out=out);'
+  'Keyboard component':
+    'prefix': 'Keyboard'
+    'body': 'Keyboard(out=out);'
+  'ROM32K component':
+    'prefix': 'ROM32K'
+    'body': 'ROM32K(address=address,out=out);'
+  'Memory component':
+    'prefix': 'Memory'
+    'body': 'Memory(in=in, load=load, address=address, out=out);'
+  'Ram8 component':
+    'prefix': 'RAM8'
+    'body': 'RAM8(in=in, load=load, address=address, out=out);'
+  'Ram64 component':
+    'prefix': 'RAM64'
+    'body': 'RAM64(in=in, load=load, address=address, out=out);'
+  'Ram512 component':
+    'prefix': 'RAM512'
+    'body': 'RAM512(in=in, load=load, address=address, out=out);'
+  'Ram4k component':
+    'prefix': 'RAM4K'
+    'body': 'RAM4K(in=in, load=load, address=address, out=out);'
+  'Ram16k component':
+    'prefix': 'RAM16K'
+    'body': 'RAM16K(in=in, load=load, address=address, out=out);'
+  'PC component':
+    'prefix': 'PC'
+    'body': 'PC(in=in, load=load, inc=inc, reset=reset, out=out);'
+  'Computer component':
+    'prefix': 'Computer'
+    'body': 'Computer(reset=reset);'
+  'CPU component':
+    'prefix': 'CPU'
+    'body': 'CPU(inM=inM, instruction=instruction, reset=reset, outM=outM, writeM=writeM, addressM=addressM, pc=pc);'

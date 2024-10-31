@@ -1,0 +1,14 @@
+{
+  "name": "language-nand2tetris-hdl",
+  "version": "0.0.1",
+  "description": "Nand2Tetris syntax highlighting for HDL files",
+  "keywords": [
+    "language",
+    "grammar"
+  ],
+  "repository": "https://github.com/atom/language-hdl",
+  "license": "MIT",
+  "engines": {
+    "Pulsar": ">=1.0.0 <2.0.0"
+  }
+}
