@@ -1,6 +1,6 @@
 {
   "name": "language-nand2tetris-hdl",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Nand2Tetris syntax highlighting for HDL files",
   "keywords": [
     "language",
