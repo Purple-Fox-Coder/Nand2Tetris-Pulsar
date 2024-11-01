@@ -2,9 +2,6 @@
 # https://github.com/atom/language-javascript/blob/master/snippets/javascript.cson
 
 '.source.hdl':
-  'Method documentation':
-    'prefix': 'doc'
-    'body': '// ${1:method} - ${2:description}'
   'Data Flip Flop':
     'prefix': 'DFF'
     'body': 'DFF(in=in, out=out);'
@@ -36,17 +33,17 @@
     'prefix': 'And16'
     'body': 'And16(a=a, b=b, out=out);'
   'DMux gate':
-    'prefix': 'Dmux'
-    'body': 'Dmux(in=in, sel=sel, a=a, b=b);'
+    'prefix': 'DMux'
+    'body': 'DMux(in=in, sel=sel, a=a, b=b);'
   'DMux16 gate':
-    'prefix': 'Dmux16'
-    'body': 'Dmux16(in=in, sel=sel, a=a, b=b);'
+    'prefix': 'DMux16'
+    'body': 'DMux16(in=in, sel=sel, a=a, b=b);'
   'DMux4Way gate':
-    'prefix': 'Dmux4'
-    'body': 'Dmux(in=in, sel=sel, a=a, b=b, c=c, d=d);'
+    'prefix': 'DMux4'
+    'body': 'DMux(in=in, sel=sel, a=a, b=b, c=c, d=d);'
   'DMux8Way gate':
-    'prefix': 'Dmux8'
-    'body': 'Dmux(in=in, sel=sel, a=a, b=b, c=c, d=d, e=e, f=f, g=g, h=h);'
+    'prefix': 'DMux8'
+    'body': 'DMux(in=in, sel=sel, a=a, b=b, c=c, d=d, e=e, f=f, g=g, h=h);'
   'Or gate':
     'prefix': 'Or'
     'body': 'Or(a=a, b=b, out=out);'
