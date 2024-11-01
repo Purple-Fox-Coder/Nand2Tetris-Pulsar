@@ -6,43 +6,35 @@
 'patterns': [
   {
     'match': '\\s*//.*$'
-    'name': 'comment.hdl'
-  }
+    'name': 'comment.asm'
+  },
   {
-    'match': '^\\s*@\\(?[0-9a-zA-Z]+\\)?\\b'
-    'name': 'storage.modifier.hdl'
-  }
+    'match': '^\\s*@[0-9a-zA-Z_]+\\b'
+    'name': 'storage.modifier.asm'
+  },
   {
-    'match': '\\s*(\\.)*\\[?[0-9]+(\\.)*\\]?\\s+|;\\s*'
-    'name': 'constant.language.hdl'
-  }
+    'match': '^\\s*\\([0-9a-zA-Z_]+\\)\\b'
+    'name': 'storage.modifier.asm'
+  },
   {
-    'match': '^\\s*@(R[0-9]+|SCREEN|KBD)\\b'
-    'name': 'storage.modifier.hdl'
-  }
+    'match': '^\\s*@((R[0-9]+)|(SCREEN)|(KBD))\\b'
+    'name': 'keyword.modifier.asm'
+  },
   {
-    'match': '\\b\\s+(IN)|(OUT)|(PARTS)|(load)\\s+\\b'
-    'name': 'keyword.control.hdl'
-  }
+    'match': '(?<=(\\+\\s*|\\-\\s*|\\=\\s*|\\s+))[ADM][ADM]?[ADM]?(?=(\\s*\\+|\\s*\\-|\\s*\\=|\\s*\\;|\\s+))'
+    'name': 'entity.name.function.asm'
+  },
   {
-    'match': '(\\s+|(\\+|\\-))([ADM]+)(\\s+|(\\;|\\+|\\-))'
-    'name': 'entity.name.function.hdl'
-  }
+    'match': '^[ADM][ADM]?[ADM]?(?=(\\s*\\+|\\s*\\-|\\s*\\=|\\s*\\;|\\s+))'
+    'name': 'entity.name.function.asm'
+  },
   {
-    'match': '(\\s+|\\;?)((JMP)|(JLT)|(JGT)|(JEQ)|(JNE))\\s*'
-    'name': 'entity.name.function.hdl'
-  }
+    'match': '(?<=(\\;\\s*))((JMP)|(JLT)|(JGT)|(JEQ)|(JNE))'
+    'name': 'jump.keyword.asm'
+  },
   {
-    'match': '\\s*\\([a-zA-Z]+\\)\\s*'
-    'name': 'entity.name.function.hdl'
-  }
-  {
-    'match': '^\\s*CHIP\\s+[a-zA-Z]+'
-    'name': 'storage.type.hdl'
-  }
-  {
-    'match': '\\b(f|m)[A-Z]\\w*\\b'
-    'name': 'variable.hdl'
+    'match': '\\s*\\([a-zA-Z_]+\\)\\s*'
+    'name': 'entity.name.function.asm'
   }
 ]
 
