@@ -17,36 +17,16 @@
     'name': 'comment.block.hdl'
   }
   {
-    'match': '^\\s*@\\(?[0-9a-zA-Z]+\\)?\\b'
-    'name': 'storage.modifier.hdl'
-  }
-  {
     'match': '\\s*(\\.)*\\[?[0-9]+(\\.)*\\]?\\s+|;\\s*'
     'name': 'constant.language.hdl'
   }
   {
-    'match': '^\\s*@(R[0-9]+|SCREEN|KBD)\\b'
-    'name': 'storage.modifier.hdl'
-  }
-  {
-    'match': '\\b\\s+(IN)|(OUT)|(PARTS)|(load)|(output-file)|(compare-to)|(output-list)|(output)|(set)\\s+\\b'
+    'match': '\\b\\s+(IN)|(OUT)|(PARTS)\\s+\\b'
     'name': 'keyword.control.hdl'
   }
   {
     'match': '\\b(\\&|\\||\\=)\\b'
     'name': 'keyword.operator.hdl'
-  }
-  {
-    'match': '(\\s+|(\\+|\\-))([ADM]+)(\\s+|(\\;|\\+|\\-))'
-    'name': 'entity.name.function.hdl'
-  }
-  {
-    'match': '(\\s+|\\;?)((JMP)|(JLT)|(JGT)|(JEQ)|(JNE))\\s*'
-    'name': 'entity.name.function.hdl'
-  }
-  {
-    'match': '\\s*\\([a-zA-Z]+\\)\\s*'
-    'name': 'entity.name.function.hdl'
   }
   {
     'match': '^\\s*CHIP\\s+[a-zA-Z]+'
