@@ -5,5 +5,16 @@
   'out'
 ]
 'patterns': [
-
+  {
+    'match': '\\+|\\||\\-'
+    'name': 'operator.cmp'
+  }
+  {
+    'match': '[0-9]'
+    'name': 'constant.cmp'
+  }
+  {
+    'match': '[a-zA-Z]'
+    'name': 'keyword.property.type.cmp'
+  }
 ]
