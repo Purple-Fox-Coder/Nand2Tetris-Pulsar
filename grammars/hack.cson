@@ -1,8 +1,39 @@
+# both examples below have no spaces:
+# 0 000000000001110     : 0000000000001110 : (0)([01]{15})
+# 111 0 101010 000 111  : 1110101010000111 : (111)([01])([01]{6})([01]{3})([01]{3})
+
 'scopeName': 'source.hack'
 'name': 'hack'
 'fileTypes': [
   'hack'
 ]
 'patterns': [
-
+    {
+      "match": "(111)(?=([01]{6})([01]{3})([01]{3}))",
+      "name": "constant.command.hack"
+    },
+    {
+      "match": "(?<=(111))([01](?=([01]{6})([01]{3})([01]{3})))",
+      "name": "keyword.command.a.hack"
+    },
+    {
+      "match": "(?<=(111)([01]))([01]{6})(?=([01]{3})([01]{3}))",
+      "name": "string.command.alu.hack"
+    },
+    {
+      "match": "(?<=(111)([01])([01]{6}))([01]{3})(?=([01]{3}))",
+      "name": "keyword.command.destination.hack"
+    },
+    {
+      "match": "(?<=(111)([01])([01]{6})([01]{3}))([01]{3})",
+      "name": "function.command.jump.hack"
+    },
+    {
+      "match": "(0)(?=([01]{15}))",
+      "name": "constant.address.hack"
+    },
+    {
+      "match": "(?<=0)([01]{15})",
+      "name": "string.address.destination.hack"
+    }
 ]
