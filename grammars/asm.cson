@@ -29,7 +29,7 @@
     'name': 'entity.name.function.asm'
   },
   {
-    'match': '(?<=(\\;\\s*))((JMP)|(JLT)|(JGT)|(JEQ)|(JNE))'
+    'match': '(?<=(\\;\\s*))((JMP)|(JLT)|(JGT)|(JEQ)|(JNE)|(JLE)|(JGE))'
     'name': 'jump.keyword.asm'
   },
   {
